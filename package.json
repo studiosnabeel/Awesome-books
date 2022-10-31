@@ -1,22 +1,22 @@
 {
-  "name": "portfolio",
+  "name": "awesome-books",
   "version": "1.0.0",
-  "description": "This repository contains the second Microverse project. In this project we will create a Portfolio.",
-  "main": "index.js",
+  "description": "Awesome books: plain JavaScript with objects",
+  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/studiosnabeel/Portfolio.git"
+    "url": "git+https://github.com/studiosnabeel/Awesome-books.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/studiosnabeel/Portfolio/issues"
+    "url": "https://github.com/studiosnabeel/Awesome-books/issues"
   },
-  "homepage": "https://github.com/studiosnabeel/Portfolio#readme",
+  "homepage": "https://github.com/studiosnabeel/Awesome-books#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
@@ -27,8 +27,5 @@
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0"
-  },
-  "dependencies": {
-    "postcss": "^8.1.0"
   }
 }
