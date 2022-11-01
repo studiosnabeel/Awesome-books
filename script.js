@@ -10,21 +10,8 @@ class Book {
 
 class UI {
   static displayBooks() {
-    const StoredBooks = [
-      {
-        title: 'How to become a Software developer',
-        author: 'Nabeel Akbar',
-      },
-      {
-        title: 'How to be successful as Process Technician',
-        author: 'Sane Myburg',
-      },
-      {
-        title: 'Love at first sight',
-        author: 'Precious Nhlapho',
-      },
-    ];
-    const books = StoredBooks;
+     
+    const books = Store.getBooks();
 
     books.forEach((book) => UI.addBookToList(book));
   }
@@ -42,6 +29,7 @@ class UI {
     `;
 
     list.appendChild(div);
+  
   }
 
   // remove function
@@ -58,6 +46,40 @@ class UI {
     document.querySelector('#author').value = '';
   }
 }
+
+class Store {
+  static getBooks() {
+    let books;
+    if(localStorage.getItem('books') === null) {
+      books = [];
+    } else {
+      books = JSON.parse(localStorage.getItem('books'));
+    }
+
+    return books;
+  }
+
+  static addBook(book) {
+    const books = Store.getBooks();
+
+    books.push(book);
+    localStorage.setItem('books', JSON.stringify(books));
+  }
+
+  static removeBook(author) {
+    const books = Store.getBooks();
+
+    books.forEach((book, index) => {
+      if (book.author === author) {
+        books.splice(index, 1);
+      }
+  });
+
+  localStorage.setItem('books', JSON.stringify(books));
+ } 
+}
+
+ 
 
 // Event: Display Books
 
@@ -79,6 +101,8 @@ document.querySelector('.awesome-form').addEventListener('submit', (e) => {
   //Add Book to UI
   UI.addBookToList(book);
 
+  Store.addBook(book);
+
   // console.log(book);
 
   // Clear fields
@@ -87,6 +111,14 @@ document.querySelector('.awesome-form').addEventListener('submit', (e) => {
 });
 
 //Event: remove book
+
 document.querySelector('.book-list').addEventListener('click', (e) => {
+  // Remove book from UI
   UI.removeBook(e.target);
+
+  console.log(e.target.previousElementSibling.textContent);
+
+  // Remove from Store
+  Store.removeBook(e.target.previousElementSibling.textContent);
 });
+
