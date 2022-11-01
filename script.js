@@ -79,8 +79,6 @@ class Store {
  } 
 }
 
- 
-
 // Event: Display Books
 
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
@@ -103,8 +101,6 @@ document.querySelector('.awesome-form').addEventListener('submit', (e) => {
 
   Store.addBook(book);
 
-  // console.log(book);
-
   // Clear fields
 
   UI.clearfields();
@@ -116,7 +112,6 @@ document.querySelector('.book-list').addEventListener('click', (e) => {
   // Remove book from UI
   UI.removeBook(e.target);
 
-  console.log(e.target.previousElementSibling.textContent);
 
   // Remove from Store
   Store.removeBook(e.target.previousElementSibling.textContent);
