@@ -44,6 +44,15 @@ class UI {
     list.appendChild(div);
   }
 
+  // remove function
+  static removeBook(element){
+
+    if(element.classList.contains('delete')){
+      element.parentElement.remove();
+    }
+    
+  }
+
   static clearfields() {
     document.querySelector('#title').value = '';
     document.querySelector('#author').value = '';
@@ -75,4 +84,9 @@ document.querySelector('.awesome-form').addEventListener('submit', (e) => {
   // Clear fields
 
   UI.clearfields();
+});
+
+//Event: remove book
+document.querySelector('.book-list').addEventListener('click', (e) => {
+  UI.removeBook(e.target);
 });
