@@ -44,3 +44,7 @@ class UI {
     list.appendChild(div);
   }
 }
+
+// Event: Display Books
+
+document.addEventListener('DOMContentLoaded', UI.displayBooks);
