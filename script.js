@@ -28,3 +28,19 @@ class UI {
 
     books.forEach((book) => UI.addBookToList(book));
   }
+
+  static addBookToList(book) {
+    const list = document.querySelector('.book-list');
+
+    const div = document.createElement('div');
+
+    div.innerHTML = `
+    <p>${book.title}</p>
+    <p>${book.author}</p>
+    <button class='delete'>Remove</button>
+    <hr></hr>
+    `;
+
+    list.appendChild(div);
+  }
+}
