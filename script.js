@@ -43,6 +43,11 @@ class UI {
 
     list.appendChild(div);
   }
+
+  static clearfields() {
+    document.querySelector('#title').value = '';
+    document.querySelector('#author').value = '';
+  }
 }
 
 // Event: Display Books
@@ -66,4 +71,8 @@ document.querySelector('.awesome-form').addEventListener('submit', (e) => {
   UI.addBookToList(book);
 
   // console.log(book);
+
+  // Clear fields
+
+  UI.clearfields();
 });
