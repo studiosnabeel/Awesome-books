@@ -77,6 +77,30 @@ class UI {
   }
 }
 
+//One page App code
+
+class Switch {
+  static changeForm(key) {
+    const bookContainer = document.querySelector('.container');
+    const awesomeForm = document.querySelector('.form');
+    const contactForm = document.querySelector('.contact');
+
+    if (key === 'List') {
+      bookContainer.style.display = 'block';
+      awesomeForm.style.display = 'none';
+      contactForm.style.display = 'none';
+    } else if (key === 'Add new') {
+      bookContainer.style.display = 'none';
+      awesomeForm.style.display = 'block';
+      contactForm.style.display = 'none';
+    } else {
+      bookContainer.style.display = 'none';
+      awesomeForm.style.display = 'none';
+      contactForm.style.display = 'block';
+    }
+  }
+}
+
 // Event: Display Books
 
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
@@ -112,4 +136,12 @@ document.querySelector('.book-list').addEventListener('click', (e) => {
 
   // Remove from Store
   Store.removeBook(e.target.previousElementSibling.textContent);
+});
+
+//Event listener for One Page app
+
+document.querySelectorAll('.nav-a').forEach((o) => {
+  o.addEventListener('click', () => {
+    Switch.changeForm(o.textContent);
+  });
 });
