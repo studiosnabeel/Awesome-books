@@ -1,9 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,700&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 
 .awesome-h1 {
   font-size: 30px;
+  text-align: center;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border: 2px solid black;
+  margin: 8px;
+}
+
+div.book-list > div:nth-of-type(odd) {
+  background: #cfcfcf;
+}
+
+.book-p1 {
+  display: inline-block;
+  padding: 4px;
+  font-weight: 700;
+  float: left;
+}
+
+.delete {
+  font-weight: 700;
+  float: right;
+  margin: 3px;
+}
+
+.awesome-form {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-hr {
+  color: black;
+  border: 1px solid black;
+  width: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-h2 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.awesome-btn {
+  padding: 2px 8px;
+  font-weight: 600;
+}
+
+.awesome-btn-folder {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.awesome-input {
+  width: 70%;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 2px 5px;
 }

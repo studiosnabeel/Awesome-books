@@ -1,6 +1,4 @@
 // Book Class: Represents a Book
-// eslint-disable-next-line max-classes-per-file, import/named
-// import { Book } from './modules/constructor.js';
 // eslint-disable-next-line max-classes-per-file
 class Book {
   constructor(title, author) {
@@ -55,13 +53,13 @@ class UI {
     const list = document.querySelector('.book-list');
 
     const div = document.createElement('div');
+    div.classList.add('book-item');
 
     div.innerHTML = `
-    <p>${book.title}</p>
-    <p>${book.author}</p>
+    <p class='book-p1'>${book.title}</p>
+    <p class='book-p1'>${book.author}</p>
     <button class='delete'>Remove</button>
-    <hr></hr>
-    `;
+  `;
 
     list.appendChild(div);
   }
