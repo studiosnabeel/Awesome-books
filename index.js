@@ -77,7 +77,7 @@ class UI {
   }
 }
 
-//One page App code
+// One page App code
 
 class Switch {
   static changeForm(key) {
@@ -138,7 +138,7 @@ document.querySelector('.book-list').addEventListener('click', (e) => {
   Store.removeBook(e.target.previousElementSibling.textContent);
 });
 
-//Event listener for One Page app
+// Event listener for One Page app
 
 document.querySelectorAll('.nav-a').forEach((o) => {
   o.addEventListener('click', () => {
