@@ -1,6 +1,6 @@
 # Awesome Books Project
 
-> For this project, we created a book app, where you can add and delete books, books can be saved or deleted from the local storage.
+> For this project, we created a book app, where you can add and delete books, books can be saved or deleted from the local storage. Refactored the DOM to a single page application.
 
 ## Built With
 
