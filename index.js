@@ -146,7 +146,7 @@ document.querySelector('.awesome-form').addEventListener('submit', (e) => {
 document.querySelector('.book-list').addEventListener('click', (e) => {
   // Remove book from UI
   UI.removeBook(e.target);
-  
+
   // Remove from Store
   Store.removeBook(e.target.previousElementSibling.textContent);
 });
