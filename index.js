@@ -140,8 +140,8 @@ document.querySelector('.book-list').addEventListener('click', (e) => {
 
 // Event listener for One Page app
 
-document.querySelectorAll('.nav-a').forEach((o) => {
-  o.addEventListener('click', () => {
-    Switch.changeForm(o.textContent);
+document.querySelectorAll('.nav-a').forEach((link) => {
+  link.addEventListener('click', () => {
+    Switch.changeForm(link.textContent);
   });
 });
