@@ -57,7 +57,8 @@ class UI {
 
     div.innerHTML = `
     <p class='book-p1'>"${book.title}"</p>
-    <p class='book-p1'>by ${book.author}</p>
+    <p class='book-p1'>by</p>
+    <p class='book-p1'>${book.author}</p>
     <button class='delete'>Remove</button>
   `;
 
@@ -145,7 +146,7 @@ document.querySelector('.awesome-form').addEventListener('submit', (e) => {
 document.querySelector('.book-list').addEventListener('click', (e) => {
   // Remove book from UI
   UI.removeBook(e.target);
-
+  
   // Remove from Store
   Store.removeBook(e.target.previousElementSibling.textContent);
 });
