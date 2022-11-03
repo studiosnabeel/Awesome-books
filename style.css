@@ -107,7 +107,7 @@ div.book-list > div:nth-of-type(odd) {
   transition: all 0.3s ease-in;
 }
 
-.nav-a:hover{
+.nav-a:hover {
   color: tomato;
   cursor: pointer;
 }
