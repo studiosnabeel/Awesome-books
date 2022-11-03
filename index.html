@@ -9,33 +9,77 @@
   </head>
   <body>
     <div class="awesome-container">
-      <h1 class="awesome-h1">Awesome books</h1>
-      <div class="book-list"></div>
-
-      <form action="" class="awesome-form">
-        <hr class="add-hr" />
-
-        <h2 class="form-h2">Add a new book</h2>
-        <input
-          class="awesome-input"
-          id="title"
-          type="text"
-          placeholder="Title"
-          required
-        />
-        <br />
-
-        <input
-          class="awesome-input"
-          id="author"
-          type="text"
-          placeholder="Author"
-          required
-        /><br />
-        <div class="awesome-btn-folder">
-          <button class="awesome-btn">Add</button>
+      <div class="nav">
+        <h1 class="awesome-h1">Awesome books</h1>
+        <nav nav>
+          <ul class="nav-ul">
+            <li class="nav-li">
+              <a class="nav-a" id="nav-booklist" href="#">List</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" id="nav-addnew" href="#">Add new</a>
+            </li>
+            <li class="nav-li">
+              <a class="nav-a" id="nav-contact" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="date">
+        <h2 class="nav-date">November 2nd 2022, 07:10:10 PM</h2>
+      </div>
+      <div class="container">
+        <div class="book-list-container">
+          <h2 class="booklist-h2">All awesome books</h2>
+          <div class="book-list"></div>
         </div>
-      </form>
+      </div>
+      <section class="form">
+        <form action="" class="awesome-form">
+          <h2 class="form-h2">Add a new book</h2>
+          <input
+            class="awesome-input"
+            id="title"
+            type="text"
+            placeholder="Title"
+            required
+          />
+          <br />
+
+          <input
+            class="awesome-input"
+            id="author"
+            type="text"
+            placeholder="Author"
+            required
+          /><br />
+          <div class="awesome-btn-folder">
+            <button class="awesome-btn">Add</button>
+          </div>
+        </form>
+      </section>
+      <div class="contact">
+        <div class="contact-container">
+          <h2 class="contact-h2">Contact Information</h2>
+          <p class="contact-p">
+            Do you have any questions or you just want to say "Hello"? <br />
+            You can reach out to us!
+          </p>
+          <div class="contact-ul-li">
+            <ul class="contact-ul">
+              <li class="ul-li">Our Email: studiosnabeel@gmail.com</li>
+              <li class="ul-li">Our Phone number: 0230230234</li>
+              <li class="ul-li">
+                Our Address: 12 parkview Ave, lahore, Pakistan
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <footer class="copyright-container">
+        <span>&copy</span>
+        <p>Awesome Books</p>
+      </footer>
     </div>
     <script src="./index.js" type="module"></script>
   </body>

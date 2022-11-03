@@ -7,9 +7,21 @@
   font-family: 'Lato', sans-serif;
 }
 
+.container {
+  display: none;
+}
+
+.contact {
+  display: none;
+}
+
 .awesome-h1 {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
+}
+
+.book-list-container {
+  height: 75vh;
 }
 
 .book-list {
@@ -17,7 +29,7 @@
   flex-direction: column;
   padding: 12px;
   border: 2px solid black;
-  margin: 8px;
+  margin: 10px;
 }
 
 div.book-list > div:nth-of-type(odd) {
@@ -38,23 +50,16 @@ div.book-list > div:nth-of-type(odd) {
 }
 
 .awesome-form {
-  padding: 30px;
+  height: 75vh;
+  padding: 90px 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-.add-hr {
-  color: black;
-  border: 1px solid black;
-  width: 60px;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 .form-h2 {
-  font-size: 24px;
+  margin-bottom: 100px;
+  font-size: 40px;
   font-weight: 700;
   padding-bottom: 10px;
 }
@@ -76,4 +81,80 @@ div.book-list > div:nth-of-type(odd) {
   font-size: 18px;
   font-weight: 700;
   padding: 2px 5px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border: 3px solid black;
+  margin: 5px 10px;
+}
+
+.nav-ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-a {
+  text-decoration: none;
+  color: black;
+  padding: 3px;
+  font-weight: 400;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 2.4px solid black;
+  transition: all 0.3s ease-in;
+}
+
+.nav-a:hover {
+  color: tomato;
+  cursor: pointer;
+}
+
+#nav-contact {
+  border: none;
+}
+
+.date {
+  padding: 2px 12px 10px 12px;
+}
+
+.nav-date {
+  font-size: 16px;
+  text-align: end;
+  font-weight: 500;
+}
+
+.copyright-container {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  gap: 10px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 110px 30px;
+  height: 75vh;
+}
+
+.contact-h2 {
+  margin-bottom: 70px;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contact-p {
+  margin-bottom: 30px;
+}
+
+.booklist-h2 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
 }
