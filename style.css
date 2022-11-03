@@ -104,6 +104,12 @@ div.book-list > div:nth-of-type(odd) {
   padding-left: 10px;
   padding-right: 10px;
   border-right: 2.4px solid black;
+  transition: all 0.3s ease-in;
+}
+
+.nav-a:hover{
+  color: tomato;
+  cursor: pointer;
 }
 
 #nav-contact {
