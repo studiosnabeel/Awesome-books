@@ -56,8 +56,8 @@ class UI {
     div.classList.add('book-item');
 
     div.innerHTML = `
-    <p class='book-p1'>${book.title}</p>
-    <p class='book-p1'>By ${book.author}</p>
+    <p class='book-p1'>"${book.title}"</p>
+    <p class='book-p1'>by ${book.author}</p>
     <button class='delete'>Remove</button>
   `;
 
