@@ -57,7 +57,7 @@ class UI {
 
     div.innerHTML = `
     <p class='book-p1'>${book.title}</p>
-    <p class='book-p1'>${book.author}</p>
+    <p class='book-p1'>By ${book.author}</p>
     <button class='delete'>Remove</button>
   `;
 

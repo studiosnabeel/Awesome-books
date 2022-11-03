@@ -21,7 +21,7 @@
 }
 
 .book-list-container {
-  height: 80vh;
+  height: 75vh;
 }
 
 .book-list {
@@ -50,19 +50,11 @@ div.book-list > div:nth-of-type(odd) {
 }
 
 .awesome-form {
-  height: 80vh;
+  height: 75vh;
   padding: 90px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.add-hr {
-  color: black;
-  border: 1px solid black;
-  width: 60px;
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .form-h2 {
@@ -141,7 +133,7 @@ div.book-list > div:nth-of-type(odd) {
   flex-direction: column;
   align-items: center;
   padding: 110px 30px;
-  height: 80vh;
+  height: 75vh;
 }
 
 .contact-h2 {
